@@ -4,8 +4,11 @@ Local Planner for a differential drive mobile robot using MPC and Acados with RO
 ## Prerequisites
 - [Acados](https://github.com/acados/acados)
 
+## Run
+- $roslaunch mpc_planner node.launch
+
 ## Tested
 - Ubuntu 20.04 , 18.04
-  
-## 
-[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/dgcIUr5awI/0.jpg)](https://www.youtube.com/watch?v=_dgcIUr5awI)
+- [Results video](https://www.youtube.com/watch?v=_dgcIUr5awI)
+ 
+
