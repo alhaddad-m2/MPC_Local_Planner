@@ -2,10 +2,14 @@
 Local Planner for a differential drive mobile robot using MPC and Acados with ROS Implementation. It has been tested on Husky Mobile Robot.
 
 ## Prerequisites
-- [Acados](https://github.com/acados/acados)
+- Install [Acados](https://github.com/acados/acados) and make sure that it works by testing examples in exampls/acados_python
+- The ROS Implamentation requires a global planner, occupancy grid and tf
 
 ## Run
-- $roslaunch mpc_planner node.launch
+- Replace <acados_dir> in env.sh with the directory of acados folder
+- $ source env.sh
+- In folder script Run: python3 create_solver in order to generate c-code solver
+- $ roslaunch mpc_planner node.launch
 
 ## Tested
 - Ubuntu 20.04 , 18.04
