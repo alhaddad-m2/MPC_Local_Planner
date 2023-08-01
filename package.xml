@@ -4,7 +4,7 @@
   <version>0.0.1</version>
   <description>ROS node for trajectory optimization using Acados solver</description>
 
-  <maintainer email="alkhaddad.m@phystech.edyu">Muhammad Alhaddad</maintainer>
+  <maintainer email="alhaddad.muh@gmail.com">Muhammad Alhaddad</maintainer>
 
 
   <license>TODO</license>
