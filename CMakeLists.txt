@@ -13,8 +13,8 @@ find_package(catkin REQUIRED COMPONENTS
 
 )
 
-set(acados_include "/home/vladislav/acados/include")
-set(acados_lib "/home/vladislav/acados/lib")
+set(acados_include "/home/muhammad/acados/include")
+set(acados_lib "/home/muhammad/acados/lib")
 
 include_directories(
 include
