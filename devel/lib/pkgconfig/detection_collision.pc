@@ -1,0 +1,8 @@
+prefix=/home/docker_mpc/catkin_ws/devel
+
+Name: detection_collision
+Description: Description of detection_collision
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

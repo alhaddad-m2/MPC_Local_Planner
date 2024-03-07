@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<?xml-model href="http://download.ros.org/schema/package_format2.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<package format="2">
+  <name>control_unitree</name>
+  <version>0.19.1</version>
+  <description>Minimal action server examples</description>
+
+  <maintainer email="aditya.pande@openrobotics.org">Aditya Pande</maintainer>
+  <maintainer email="alejandro@openrobotics.org">Alejandro Hernandez Cordero</maintainer>
+
+  <license>Apache License 2.0</license>
+
+  <author email="jacob@openrobotics.org">Jacob Perron</author>
+  <author email="sloretz@openrobotics.org">Shane Loretz</author>
+
+  <buildtool_depend>ament_cmake</buildtool_depend>
+
+  <depend>action_msg</depend>
+  <depend>rclcpp</depend>
+  <depend>rclcpp_action</depend>
+  <depend>geometry_msgs</depend>
+  <depend>tf2</depend>
+  <depend>tf2_ros</depend>
+  <depend>std_msgs</depend>
+  <depend>unitree_legged_sdk</depend>
+  <depend>unitree_ros2_msgs</depend>
+  <depend>nav_msgs</depend>
+
+  <test_depend>ament_lint_auto</test_depend>
+  <test_depend>ament_lint_common</test_depend>
+
+  <export>
+    <build_type>ament_cmake</build_type>
+  </export>
+</package>

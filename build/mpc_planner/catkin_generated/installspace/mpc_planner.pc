@@ -1,0 +1,8 @@
+prefix=/home/docker_mpc/catkin_ws/install
+
+Name: mpc_planner
+Description: Description of mpc_planner
+Version: 0.0.1
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 
