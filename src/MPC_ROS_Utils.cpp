@@ -197,27 +197,7 @@ int MPC_ROS_Utils::index_cell_at_coordintes(double x_s , double y_s)
 
 double MPC_ROS_Utils::distance_point_to_line(double x1, double x2 , double y1 , double y2, double x_point , double y_point)
 {
-    double m , m_p;
-    if (y1 == y2)
-    {
-        m_p = 10000;
-    }
-    else if(x1 == x2)
-    {
-        m_p = 0;
-    }
-    else
-    {
-        m = (y2-y1)/(x2-x1);
-        m_p = -1/m;
-    }
-
-    // coordinate of the intersection point
-    double x_inter = (m * x1 - m_p * x_point - y1 + y_point)/(m-m_p);
-    double y_inter = m*(x_inter-x1) + y1;
-    
-
-    // d_inter must be equal to dist_to_path
-    double d_inter = sqrt((x_point-x_inter)*(x_point-x_inter)+(y_point-y_inter)*(y_point-y_inter));
+    // formula of distance between line and point https://en.wikipedia.org/wiki/Distance_from_a_point_to_a_line
+    double d_inter = abs((x2-x1)*(y1-y_point) - (x1-x_point)*(y2-y1))/sqrt((x2-x1)*(x2-x1)+(y2-y1)*(y2-y1));
     return d_inter;
 }
